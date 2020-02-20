@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id='@+id/root_view'
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backscreen"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id='@+id/flashcardquestion'
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/solid_color_shape"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text='@string/question'
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/choiceA"
+        android:visibility="invisible"
+        android:background="@drawable/choices_color_shape"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp"
+        android:gravity="center"
+        android:text="@string/verywrong"
+        android:textSize="30sp" />
+
+    <TextView
+
+        android:id="@+id/choiceB"
+        android:visibility="invisible"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="242dp"
+        android:background="@drawable/choices_color_shape"
+        android:gravity="center"
+        android:text="@string/wrong"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/choiceC"
+        android:visibility="invisible"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="117dp"
+        android:background="@drawable/choices_color_shape"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/hide"
+        android:visibility="visible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        app:srcCompat="@drawable/ic_hide" />
+
+
+
+</RelativeLayout>

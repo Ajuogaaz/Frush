@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Frush</string>
+    <string name="question">Who is the 44th president of the United States?</string>
+    <string name="answer">Barack Obama</string>
+    <string name="wrong">George W Bush</string>
+    <string name= "verywrong">Donald Trump</string>
+</resources>
