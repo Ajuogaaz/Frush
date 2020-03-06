@@ -1,5 +1,6 @@
 package com.example.linus.frush;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.annotation.DrawableRes;
 import android.support.design.widget.Snackbar;
@@ -93,11 +94,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.edit).setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddCardActivivity.class);
-                intent.putExtra("stringKey1", getString(R.string.question));
-                intent.putExtra("stringKey2", getString(R.string.answer));
+                intent.putExtra("stringKey1", ((TextView)findViewById(R.id.flashcardquestion)).getText());
+                intent.putExtra("stringKey2", ((TextView) findViewById(R.id.choiceC)).getText());
+                intent.putExtra("stringKey3", ((TextView) findViewById(R.id.choiceA)).getText());
+                intent.putExtra("stringKey4", ((TextView) findViewById(R.id.choiceB)).getText());
 
                 MainActivity.this.startActivityForResult(intent, 100);
             }
@@ -108,16 +112,22 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode == 100 && resultCode == RESULT_OK){
+        if(requestCode == 100 && resultCode == RESULT_OK) {
             String string1 = data.getExtras().getString("string1");
             String string2 = data.getExtras().getString("string2");
-            ((TextView)findViewById(R.id.flashcardquestion)).setText(string1);
+            String string3 = data.getExtras().getString("string3");
+            String string4 = data.getExtras().getString("string4");
+            ((TextView) findViewById(R.id.flashcardquestion)).setText(string1);
             ((TextView) findViewById(R.id.choiceC)).setText(string2);
+            ((TextView) findViewById(R.id.choiceA)).setText(string3);
+            ((TextView) findViewById(R.id.choiceB)).setText(string4);
+
+            Snackbar.make(findViewById(R.id.flashcardquestion),
+                    "Card created succesfully!",
+                    Snackbar.LENGTH_SHORT)
+                    .show();
         }
-        Snackbar.make(findViewById(R.id.flashcardquestion),
-                "The message to display",
-                Snackbar.LENGTH_SHORT)
-                .show();
+
     }
 
 }

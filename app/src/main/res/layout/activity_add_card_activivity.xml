@@ -53,7 +53,29 @@
         android:hint="@string/addanswer"
         android:inputType="textMultiLine" />
 
+    <EditText
+        android:id="@+id/wronganswer1"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:hint="@string/alt1"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textMultiLine" />
 
+    <EditText
+        android:id="@+id/wronganswer2"
+        android:layout_width="316dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="185dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/alt1"
+        android:inputType="textMultiLine" />
 
 
 </RelativeLayout>
