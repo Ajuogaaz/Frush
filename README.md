@@ -10,7 +10,7 @@ A simple android Flash Card App witha beautiful UI. It flashes out a question an
 ### App Walk-though
 A Demonstartion of the app features
 
-<img src="Lab1.gif" width=200><br>
+<img src="Lab2.gif" width=200><br>
 
 ## Required
 * [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
