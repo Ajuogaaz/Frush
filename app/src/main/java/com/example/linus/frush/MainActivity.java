@@ -1,10 +1,15 @@
 package com.example.linus.frush;
 
+import android.content.Intent;
 import android.support.annotation.DrawableRes;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,8 +82,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.plus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, AddCardActivivity.class);
+                MainActivity.this.startActivityForResult(intent, 100);
+                
+            }
+        });
+
+        findViewById(R.id.edit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AddCardActivivity.class);
+                intent.putExtra("stringKey1", getString(R.string.question));
+                intent.putExtra("stringKey2", getString(R.string.answer));
+
+                MainActivity.this.startActivityForResult(intent, 100);
+            }
+        });
+
+
 
     }
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == 100 && resultCode == RESULT_OK){
+            String string1 = data.getExtras().getString("string1");
+            String string2 = data.getExtras().getString("string2");
+            ((TextView)findViewById(R.id.flashcardquestion)).setText(string1);
+            ((TextView) findViewById(R.id.choiceC)).setText(string2);
+        }
+        Snackbar.make(findViewById(R.id.flashcardquestion),
+                "The message to display",
+                Snackbar.LENGTH_SHORT)
+                .show();
+    }
 
 }
