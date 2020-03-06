@@ -43,7 +43,7 @@ public class AddCardActivivity extends AppCompatActivity {
                 if(string1.isEmpty()|| string2.isEmpty() || string3.isEmpty() || string4.isEmpty()){
                     //Snackbar.make(findViewById(R.id.secondaryroot),
                     //        "OOPS!  Make sure you fill out the fields",
-                    //        Snackbar.LENGTH_SHORT).show();
+                    //        Snackbar.LENGTH_SHORT).show()
                     Toast.makeText(AddCardActivivity.this,
                             "OOPS!  Make sure you fill out the fields",
                             Toast.LENGTH_LONG).show();
