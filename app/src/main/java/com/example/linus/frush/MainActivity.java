@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddCardActivivity.class);
                 intent.putExtra("stringKey1", ((TextView)findViewById(R.id.flashcardquestion)).getText());
-                intent.putExtra("stringKey2", ((TextView) findViewById(R.id.choiceC)).getText());
+                intent.putExtra( "stringKey2", ((TextView) findViewById(R.id.choiceC)).getText());
                 intent.putExtra("stringKey3", ((TextView) findViewById(R.id.choiceA)).getText());
                 intent.putExtra("stringKey4", ((TextView) findViewById(R.id.choiceB)).getText());
 
