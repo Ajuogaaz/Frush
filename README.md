@@ -9,7 +9,7 @@ A simple android Flash Card App witha beautiful UI. It flashes out a question an
 ### App Walk-though
 A Demonstartion of the app features
 
-<img src="Lab2.gif" width=200><br>
+<img src="Lab3.gif" width=200><br>
 
 ## Required
 * [x] User can create a card and still see their created card when the app is relaunched.
