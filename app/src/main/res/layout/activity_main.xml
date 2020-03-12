@@ -19,7 +19,7 @@
         android:background="@drawable/solid_color_shape"
         android:elevation="5dp"
         android:gravity="center"
-        android:text='@string/question'
+        android:text='@string/EmptyFlash'
         android:textSize="40sp" />
 
 
@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="181dp"
         android:gravity="center"
-        android:text="@string/verywrong"
+        android:text="@string/Emptyanswer"
         android:textSize="30sp" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_marginBottom="242dp"
         android:background="@drawable/choices_color_shape"
         android:gravity="center"
-        android:text="@string/wrong"
+        android:text="@string/Emptyanswer"
         android:textSize="30sp" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_marginBottom="117dp"
         android:background="@drawable/choices_color_shape"
         android:gravity="center"
-        android:text="@string/answer"
+        android:text="@string/Emptyanswer"
         android:textSize="30sp" />
 
 
@@ -93,6 +93,25 @@
         android:layout_marginBottom="19dp"
         android:layout_marginStart="41dp"
         app:srcCompat="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/trash"
+        android:visibility="visible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/choiceB"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_trash" />
+
+    <ImageView
+        android:id="@+id/nextThing"
+        android:visibility="visible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/choiceB"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="49dp"
+        app:srcCompat="@drawable/ic_next" />
 
 
 </RelativeLayout>

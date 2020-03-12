@@ -7,4 +7,6 @@
     <string name="addquestion">Enter a question</string>
     <string name ="addanswer">Enter the answer</string>
     <string name ="alt1">Enter wrong answer</string>
+    <string name ="EmptyFlash">Your collection is empty Click \'+\' to create your collection</string>
+    <string name = "Emptyanswer">Add Choices</string>
 </resources>

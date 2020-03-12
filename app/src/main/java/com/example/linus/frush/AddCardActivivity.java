@@ -49,6 +49,7 @@ public class AddCardActivivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                     return;
                 }
+
                 Intent data = new Intent();
                 data.putExtra("string1", string1);
                 data.putExtra("string2", string2);
