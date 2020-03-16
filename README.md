@@ -69,3 +69,5 @@ A Demonstartion of the app features
 * [x] Add selectable multiple choice answers beneath the card
    * [x] Change the background color of the multiple choice answers when clicked to indicate whether the question were answered correctly
 * [x] Further customize and style the card
+
+Licence
