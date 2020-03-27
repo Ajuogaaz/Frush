@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="pink">#FFC0CB</color>
     <color name="colorAccent">#FF4081</color>
     <color name = "question">#0C41F0</color>
     <color name = "answer">#15ED44</color>

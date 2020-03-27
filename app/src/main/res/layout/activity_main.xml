@@ -8,6 +8,17 @@
     android:background="@color/backscreen"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id='@+id/timer'
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:textColor="@color/wrongAnswer"
+        android:textAllCaps="true"
+        android:textSize="34sp" />
 
     <TextView
         android:id='@+id/flashcardquestion'
@@ -15,7 +26,7 @@
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/solid_color_shape"
         android:elevation="5dp"
         android:gravity="center"
@@ -31,7 +42,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="181dp"
+        android:layout_marginBottom="141dp"
         android:gravity="center"
         android:text="@string/Emptyanswer"
         android:textSize="30sp" />
@@ -44,7 +55,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="242dp"
+        android:layout_marginBottom="202dp"
         android:background="@drawable/choices_color_shape"
         android:gravity="center"
         android:text="@string/Emptyanswer"
@@ -57,7 +68,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="117dp"
+        android:layout_marginBottom="77dp"
         android:background="@drawable/choices_color_shape"
         android:gravity="center"
         android:text="@string/Emptyanswer"
